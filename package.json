@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "@openzeppelin/contracts": "^4.4.0"
+    "@openzeppelin/contracts": "^4.4.0",
+    "ganache-cli": "^6.12.2"
   }
 }
