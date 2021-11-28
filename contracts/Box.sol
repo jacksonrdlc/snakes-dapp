@@ -10,8 +10,8 @@ contract Box is Ownable {
     event ValueChanged(uint256 value);
 
     function store(uint256 value) public onlyOwner {
-        value = _value;
-        emit ValueChanged(_value);
+        _value = value;
+        emit ValueChanged(value);
     }
 
     function retrieve() public view returns(uint256){
