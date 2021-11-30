@@ -33,8 +33,8 @@ contract Betting {
     }
 
     function makeBet(uint8 _teamSelected) public payable {
-        require(!checkPlayerExists(msg.sender));
-        require(msg.value >= minimumBet);
+        require(!checkPlayerExists(msg.sender), "You have already bet");
+        require(msg.value >= minimumBet, "You must bet at least the minimum bet");
 
         //We set the player informations : amount of the bet and selected team
         playerInfo[msg.sender].amountBet = msg.value;

@@ -4,6 +4,9 @@
     "ganache-cli": "^6.12.2"
   },
   "dependencies": {
-    "chai": "^4.3.4"
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethereumjs-wallet": "^1.0.2",
+    "truffle-wallet-provider": "^0.0.5"
   }
 }
